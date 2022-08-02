@@ -1,7 +1,12 @@
 (ns stupid-sql.core
   (:gen-class))
 
+
+(defn hello-messages []
+  (println "Project Stupid SQL"))
+
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Starting project"
   [& args]
-  (println "Hello, World!"))
+  (hello-messages)
+  0)
