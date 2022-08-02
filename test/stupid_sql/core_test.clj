@@ -1,7 +1,7 @@
 (ns stupid-sql.core-test
   (:require [clojure.test :refer :all]
-            [stupid-sql.core :refer :all]))
+            [stupid-sql.core :as core]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest main-test
+  (testing "Main working"
+    (is (= 0 (core/-main)))))
